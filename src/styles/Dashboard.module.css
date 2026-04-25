@@ -1,0 +1,227 @@
+/* Estilos módulo para el Dashboard */
+.pagina {
+  padding: 40px 0 80px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Encabezado del perfil */
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2c7a4b, #20c997);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nombreUsuario {
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px;
+}
+
+.infoUsuario {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Tarjetas de estadísticas */
+.statCard {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.statValor {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c7a4b;
+  margin: 0;
+}
+
+/* Tabs */
+.cardTabs {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.tabsHeader {
+  background: #fff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0 16px;
+}
+
+.tabs {
+  border-bottom: none;
+}
+
+.tabLink {
+  color: #6c757d !important;
+  font-weight: 500;
+  padding: 12px 16px !important;
+}
+
+.tabLink.active {
+  color: #2c7a4b !important;
+  border-bottom: 2px solid #2c7a4b !important;
+  background: transparent !important;
+}
+
+/* Perfil — campos */
+.campoPerfil {
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.campoLabel {
+  font-size: 0.75rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.campoValor {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Publicaciones */
+.cardPublicacion {
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  transition: box-shadow 0.2s;
+}
+
+.cardPublicacion:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.inactiva {
+  opacity: 0.55;
+}
+
+.pubNombre {
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #1a1a2e;
+}
+
+.pubPrecio {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c7a4b;
+  margin-bottom: 4px;
+}
+
+.pubMeta {
+  font-size: 0.78rem;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+/* Historial */
+.historialLista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.historialItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.historialIcono {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.historialInfo {
+  flex: 1;
+}
+
+.historialProducto {
+  font-weight: 600;
+  margin: 0 0 2px;
+  color: #1a1a2e;
+}
+
+.historialMeta {
+  font-size: 0.82rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.historialMonto {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin: 0 0 4px;
+}
+
+.venta {
+  color: #198754;
+}
+.compra {
+  color: #0d6efd;
+}
+
+/* Vacío */
+.vacio {
+  text-align: center;
+  padding: 40px 0;
+  color: #6c757d;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historialItem {
+    flex-wrap: wrap;
+  }
+}

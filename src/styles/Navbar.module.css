@@ -1,0 +1,10 @@
+/* Estilos módulo para el Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

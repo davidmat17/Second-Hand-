@@ -1,0 +1,24 @@
+/* Estilos globales de Second Hand */
+:root {
+  --color-primario: #2c7a4b;
+  --color-secundario: #f4a620;
+  --color-fondo: #f8f9fa;
+  --color-texto: #212529;
+  --color-footer: #1a1a2e;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Primera letra grande y a color (requisito del curso) */
+.texto-decorado::first-letter {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  float: left;
+  line-height: 1;
+  margin-right: 6px;
+}

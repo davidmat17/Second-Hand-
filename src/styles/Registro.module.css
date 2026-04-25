@@ -1,0 +1,134 @@
+/* Estilos módulo para la página de registro */
+.pagina {
+  padding: 40px 0 80px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border: none;
+  padding: 8px;
+}
+
+.encabezado {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.titulo {
+  color: #2c7a4b;
+  font-weight: 700;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.req {
+  color: #dc3545;
+}
+
+.opcional {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* Fortaleza de contraseña */
+.fortalezaBox {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 4px;
+}
+
+.fortalezaHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.reglasList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.reglaOk {
+  font-size: 0.78rem;
+  color: #198754;
+}
+
+.reglaPendiente {
+  font-size: 0.78rem;
+  color: #6c757d;
+}
+
+/* CAPTCHA */
+.captchaBox {
+  background: #f0faf4;
+  border: 2px dashed #2c7a4b;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.captchaTitulo {
+  font-weight: 700;
+  color: #2c7a4b;
+  margin-bottom: 8px;
+}
+
+.captchaPregunta {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+}
+
+.captchaInput {
+  max-width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Links */
+.linkLogin {
+  color: #2c7a4b;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Éxito */
+.exito {
+  padding: 60px 20px;
+}
+
+.exitoIcon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .reglasList {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
