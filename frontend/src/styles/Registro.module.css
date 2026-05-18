@@ -1,0 +1,68 @@
+.pagina {
+  padding: 40px 0 72px;
+  background: #EBEBEB;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 10px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10) !important;
+  border: 1px solid #E0E0E0 !important;
+  padding: 8px;
+  background: #fff !important;
+}
+
+.encabezado {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #F0F0F0;
+}
+
+.titulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.55rem;
+  color: #222;
+}
+
+.label { font-weight: 700; font-size: 0.88rem; color: #444; }
+.req { color: #e53935; }
+.opcional { color: #888; font-weight: 400; font-size: 0.78rem; }
+
+.fortalezaBox {
+  background: #F5F5F5;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+.fortalezaHeader { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.reglasList {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 4px;
+}
+.reglaOk    { font-size: 0.78rem; color: #00A650; }
+.reglaFail  { font-size: 0.78rem; color: #e53935; }
+.reglaPendiente { font-size: 0.78rem; color: #888; }
+
+.captchaBox {
+  background: #E8F7EF;
+  border: 2px dashed #00A650;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+.captchaTitulo { font-family: 'Nunito', sans-serif; font-weight: 800; color: #00A650; margin-bottom: 8px; }
+.captchaPregunta { font-family: 'Nunito', sans-serif; font-size: 1.4rem; font-weight: 800; color: #222; margin-bottom: 12px; }
+.captchaInput { max-width: 120px; margin: 0 auto; text-align: center; font-size: 1.1rem; }
+
+.linkLogin { color: #00A650; font-weight: 700; text-decoration: none; }
+.linkLogin:hover { color: #008C44; text-decoration: underline; }
+
+.exito { padding: 60px 20px; }
+.exitoIcon { font-size: 4rem; margin-bottom: 16px; }
+
+@media (max-width: 576px) {
+  .reglasList { grid-template-columns: 1fr; }
+  .card { border-radius: 0 !important; box-shadow: none !important; }
+}

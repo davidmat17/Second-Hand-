@@ -1,0 +1,136 @@
+.pagina {
+  padding: 28px 0 72px;
+  background: #EBEBEB;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 22px;
+}
+
+/* ── Sidebar ── */
+.sidebarCard {
+  border-radius: 8px !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #fff !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+  overflow: hidden;
+}
+
+/* ── Avatar ── */
+.avatarWrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 16px auto 0;
+}
+.avatarWrapper:hover .avatarOverlay { opacity: 1; }
+
+.avatarOverlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.avatarGrande {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #00A650;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarGrandeImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Contenido ── */
+.contenidoCard {
+  border-radius: 8px !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #fff !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+}
+
+/* ── Datos perfil ── */
+.datosList {
+  border-top: 1px solid #F0F0F0;
+  padding-top: 4px;
+}
+.datoFila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+.datoFila:last-child { border-bottom: none; }
+.datoLabel { font-weight: 700; font-size: 0.83rem; color: #888; }
+.datoValor { font-size: 0.93rem; color: #222; text-align: right; font-weight: 600; }
+
+/* ── Publicaciones ── */
+.pubFila {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+.pubFila:last-child { border-bottom: none; }
+
+.pubInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+.pubInfo strong {
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.pubAcciones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 90px;
+}
+
+/* Legacy stubs */
+.encabezado, .avatar, .nombreUsuario, .infoUsuario,
+.statCard, .statLabel, .statValor, .cardTabs, .tabsHeader,
+.tabs, .tabLink, .campoPerfil, .campoLabel, .campoValor,
+.label, .cardPublicacion, .inactiva, .pubNombre, .pubPrecio,
+.pubMeta, .historialLista, .historialItem, .historialIcono,
+.historialInfo, .historialProducto, .historialMeta,
+.historialMonto, .venta, .compra, .vacio { }
+
+@media (max-width: 576px) {
+  .pubFila { flex-direction: column; }
+  .pubAcciones { flex-direction: row; }
+}

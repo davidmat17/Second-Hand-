@@ -1,0 +1,113 @@
+.pagina {
+  padding: 24px 0 64px;
+  background: #EBEBEB;
+  min-height: 100vh;
+}
+
+.encabezado { margin-bottom: 20px; }
+
+.titulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #222;
+}
+
+/* ── Filtros ── */
+.panelFiltros {
+  background: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 20px;
+  position: sticky;
+  top: 72px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.filtrosTitulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #222;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00A650;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.labelFiltro {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* ── Cards ── */
+.cardProducto {
+  border-radius: 8px !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #fff !important;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.cardProducto:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+  transform: translateY(-3px);
+}
+
+.cardImg {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.cardTitulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 6px;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardPrecio {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #00A650;
+  margin-bottom: 4px;
+}
+
+.cardVendedor {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.badgeCategoria { font-size: 0.68rem; }
+
+/* ── Sin resultados ── */
+.sinResultados {
+  text-align: center;
+  padding: 72px 0;
+  color: #888;
+}
+
+/* ── Modal ── */
+.precioModal {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #00A650;
+  margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .panelFiltros { position: static; margin-bottom: 16px; }
+}

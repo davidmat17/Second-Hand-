@@ -1,0 +1,273 @@
+/* ── Carrusel ── */
+.carrusel { width: 100%; }
+
+.slide {
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.slideUno {
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 45%, rgba(0,0,0,0.15) 100%),
+              url("/cosas_usadas.jpg") center/cover no-repeat;
+}
+.slideDos {
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 45%, rgba(0,0,0,0.15) 100%),
+              url("/Compra_Vende.png") center/cover no-repeat;
+}
+.slideTres {
+  background: linear-gradient(to right, rgba(0,0,0,0.65) 45%, rgba(0,0,0,0.15) 100%),
+              url("/economia_circular.webp") center/cover no-repeat;
+}
+
+.slidetitulo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+:global(.carousel-caption) {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  left: 8%;
+  right: 45%;
+}
+:global(.carousel-caption p) {
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-bottom: 22px;
+}
+:global(.carousel-indicators [data-bs-target]) {
+  width: 28px; height: 4px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.45);
+  border: none;
+}
+:global(.carousel-indicators .active) {
+  background: #00A650;
+}
+
+/* ── Títulos de sección ── */
+.tituloSeccion {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 1.55rem;
+  color: #222;
+  position: relative;
+  padding-bottom: 10px;
+}
+.tituloSeccion::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 40px; height: 3px;
+  background: #00A650;
+  border-radius: 2px;
+}
+
+/* ── Intro ── */
+.introTexto {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+.masInfo {
+  background: #E8F7EF;
+  border-left: 4px solid #00A650;
+  padding: 14px 18px;
+  border-radius: 0 8px 8px 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* ── Categorías ── */
+.seccionCategorias {
+  background: #fff;
+  padding: 48px 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.cardCategoria {
+  border-radius: 10px !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #fff !important;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.cardCategoria:hover {
+  box-shadow: 0 6px 20px rgba(0,166,80,0.15) !important;
+  border-color: #00A650 !important;
+  transform: translateY(-4px);
+}
+
+.categoriaImgWrap {
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.categoriaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.cardCategoria:hover .categoriaImg {
+  transform: scale(1.07);
+}
+.categoriaNombre {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #222;
+  margin-bottom: 3px;
+}
+.categoriaDesc {
+  font-size: 0.73rem;
+  color: #888;
+  line-height: 1.35;
+}
+
+/* ── Productos destacados ── */
+.cardProducto {
+  border-radius: 8px !important;
+  border: 1px solid #E0E0E0 !important;
+  background: #fff !important;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+}
+.cardProducto:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+  transform: translateY(-3px);
+}
+
+.precio {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #00A650;
+}
+.precioModal {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #00A650;
+}
+
+/* ── Video ── */
+.seccionVideo {
+  background: #1a1a1a;
+  padding: 56px 0;
+}
+.seccionVideo .tituloSeccion { color: #fff; }
+.seccionVideo .tituloSeccion::after { background: #00A650; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
+.video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── Buscador rápido ── */
+.seccionBuscador {
+  background: linear-gradient(135deg, #00A650 0%, #007a3b 100%);
+  padding: 36px 0 32px;
+  text-align: center;
+}
+
+.buscadorSubtitulo {
+  color: rgba(255,255,255,0.9);
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+.buscadorForm {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  max-width: 580px;
+  margin: 0 auto 18px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.buscadorInput {
+  flex: 1;
+  padding: 14px 22px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #222;
+  background: #fff;
+  min-width: 0;
+}
+
+.buscadorBtn {
+  padding: 14px 26px;
+  background: #FFD700;
+  color: #222;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.buscadorBtn:hover {
+  background: #f5c800;
+}
+
+.categoriasRapidas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.chipCategoria {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 20px;
+  padding: 5px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  backdrop-filter: blur(4px);
+}
+.chipCategoria:hover {
+  background: rgba(255,255,255,0.28);
+  border-color: rgba(255,255,255,0.7);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .slide { height: 340px; }
+  .slidetitulo { font-size: 1.7rem; }
+  :global(.carousel-caption) { left: 5%; right: 5%; }
+}

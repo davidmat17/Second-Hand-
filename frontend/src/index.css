@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --green:        #00A650;
+  --green-dark:   #008C44;
+  --green-light:  #E8F7EF;
+  --green-mid:    #00C060;
+  --white:        #FFFFFF;
+  --gray-bg:      #EBEBEB;
+  --gray-card:    #F5F5F5;
+  --border:       #E0E0E0;
+  --text:         #333333;
+  --text-2:       #666666;
+  --text-3:       #999999;
+  --price:        #00A650;
+  --radius:       8px;
+  --shadow:       0 1px 4px rgba(0,0,0,0.12);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.16);
+  --font:         'Nunito', 'Segoe UI', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--gray-bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font);
+  color: var(--text);
+  margin: 0;
+  line-height: 1.25;
+}
+
+p { margin: 0; }
+
+/* ── Bootstrap overrides ── */
+.btn {
+  font-family: var(--font);
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  transition: all 0.18s;
+}
+
+.btn-success {
+  background: var(--green) !important;
+  border-color: var(--green) !important;
+  color: #fff !important;
+}
+.btn-success:hover {
+  background: var(--green-dark) !important;
+  border-color: var(--green-dark) !important;
+}
+
+.btn-outline-success {
+  color: var(--green) !important;
+  border-color: var(--green) !important;
+}
+.btn-outline-success:hover {
+  background: var(--green) !important;
+  color: #fff !important;
+}
+
+.badge.bg-success { background: var(--green) !important; }
+
+.form-control, .form-select {
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  font-family: var(--font);
+  font-size: 0.93rem;
+  background: #fff;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(0,166,80,0.15);
+}
+
+.progress-bar.bg-success { background: var(--green) !important; }
+
+/* Cards base */
+.card {
+  border-radius: var(--radius) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow);
+  background: var(--white) !important;
+}
+
+.modal-content {
+  border-radius: 12px !important;
+  border: none !important;
+}
+
+/* Nav pills */
+.nav-pills .nav-link.active {
+  background: var(--green) !important;
+}
+.nav-pills .nav-link {
+  color: var(--text-2) !important;
+  font-weight: 600;
+  border-radius: 6px !important;
+}
+.nav-pills .nav-link:hover:not(.active) {
+  background: var(--green-light) !important;
+  color: var(--green) !important;
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  color: var(--green) !important;
+  background: var(--green-light) !important;
+  box-shadow: none !important;
+}
+.accordion-button:focus { box-shadow: 0 0 0 3px rgba(0,166,80,0.15) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--gray-bg); }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }

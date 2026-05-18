@@ -1,0 +1,93 @@
+.footer {
+  background: #1a1a1a;
+  color: #aaa;
+  margin-top: auto;
+  border-top: 3px solid #00A650;
+}
+
+.titulo {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: #00A650;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.descripcion { font-size: 0.87rem; line-height: 1.7; color: #888; }
+
+.subtituloEquipo { font-size: 0.72rem; color: #555; margin-bottom: 10px; font-style: italic; }
+
+.miembroBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  color: #ccc;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.miembroBtn:hover {
+  background: rgba(0,166,80,0.10);
+  border-color: rgba(0,166,80,0.30);
+}
+.miembroBtn:focus-visible { outline: 2px solid #00A650; outline-offset: 2px; }
+
+.avatarMini {
+  flex-shrink: 0;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: #00A650;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.miembroTexto { display: flex; flex-direction: column; line-height: 1.2; }
+.miembroTexto strong { font-size: 0.87rem; color: #eee; }
+.miembroTexto small  { font-size: 0.72rem; color: #666; }
+
+.avatarModal {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00A650;
+}
+
+.avatarModalIniciales {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: #00A650;
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rolModal { color: #888; font-style: italic; margin-bottom: 1.25rem; }
+
+.datosLista { text-align: left; border-top: 1px solid #e9ecef; padding-top: 1rem; }
+.datoFila { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f1f3f5; }
+.datoFila:last-child { border-bottom: none; }
+.datoLabel { font-weight: 700; color: #495057; font-size: 0.87rem; }
+.datoValor { color: #222; font-size: 0.9rem; text-align: right; word-break: break-word; }
+
+.redes { display: flex; flex-direction: column; gap: 10px; }
+.red { color: #00A650; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+.red:hover { color: #fff; }
+
+.linea { border-color: #2a2a2a; }

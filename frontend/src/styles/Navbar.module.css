@@ -1,0 +1,80 @@
+.navbar {
+  background: #00A650 !important;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.18);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  gap: 16px;
+}
+
+.brand img {
+  height: 42px;
+  object-fit: contain;
+}
+
+/* Links */
+:global(.navbar-nav .nav-link) {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9) !important;
+  padding: 6px 12px !important;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+:global(.navbar-nav .nav-link:hover) {
+  background: rgba(255,255,255,0.15);
+  color: #fff !important;
+}
+
+/* Botón Publicar — blanco sólido */
+.btnPublicar {
+  background: #fff !important;
+  border: none !important;
+  color: #00A650 !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  border-radius: 6px !important;
+  padding: 6px 16px !important;
+  transition: background 0.15s, transform 0.12s !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+.btnPublicar:hover {
+  background: #E8F7EF !important;
+  transform: translateY(-1px);
+}
+
+/* Botón login — outlined blanco */
+.btnLogin {
+  background: transparent !important;
+  border: 1.5px solid rgba(255,255,255,0.6) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  border-radius: 6px !important;
+  padding: 5px 14px !important;
+  transition: border-color 0.15s, background 0.15s !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+.btnLogin:hover {
+  border-color: #fff !important;
+  background: rgba(255,255,255,0.12) !important;
+}
+
+.saludo {
+  color: rgba(255,255,255,0.88);
+  font-size: 0.88rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+:global(.navbar-toggler) {
+  border-color: rgba(255,255,255,0.4) !important;
+}
+:global(.navbar-toggler-icon) {
+  filter: brightness(10);
+}
